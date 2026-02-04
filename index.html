@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andi Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="title2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div id="custom-alert" class="alert-box">
+        <div class="alert-content">
+            <img src="tenor (3).gif" alt="">
+            <p class="perhatian"><strong>PERHATIAN!!!!!!</strong></p>
+            <p>Bagi para pengunjung website <u>harap mengaktifkan internet</u> agar bisa mengakses gambar/logo serta link yang tercantum di website. Lalu ada sedikit bug juga yaitu saat me-reload website dibagian section manapun, navbar akan hilang jika scroll ke atas jadi mohon maaf atas bugnya🙏, terimakasih dan jangan lupa sigma 🤫🧏</p>
+            <button class="alert-button" id="alert" onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            ANDI <span>COFFEE</span>
+        </a>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About us</a>
+            <a href="#gallery">Products</a>
+            <a href="#review">Mini Games</a>
+            <a href="#contact-section">Contact us</a>
+            <a href="login/login.html" class="login-btn">Log in</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-isi">
+            <div class="wrapper">
+                <h1 id="typewriter-text"></h1>
+            </div>
+            <p>Selamat datang di Andi <span>Coffee</span>, tempat bagi para pencinta kopi untuk menikmati racikan terbaik.
+                 Kami menawarkan berbagai pilihan kopi berkualitas tinggi, 
+                 diseduh dengan penuh perhatian untuk memberikan pengalaman yang sempurna di setiap tegukan. 
+                Nikmati aroma khas dan cita rasa yang autentik, 
+                diracik khusus untuk Anda yang menghargai keunikan setiap cangkir kopi.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="overlay"></div>
+        <div class="about-isi">
+            <h2 class="heading">About <span>us</span></h2>
+            <p>Di antara aroma kopi yang menenangkan, kenangan lama bermunculan. Setiap tegukan membawa kita kembali ke masa-masa indah bersama. Andi Coffee, tempat yang sempurna untuk merenung dan mengenang.</p>
+            <a href="https://www.castleofspirits.com/" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery-isi">
+            <h2 class="heading">Our <span>Products</span></h2>
+            <div class="slide to-slide">
+                <div class="to-prev"></div>
+                <div class="to-next"></div>
+                <ul>
+                    <li><img src="kopi1.png" alt=""></li>
+                    <li><img src="kopi9.png" alt=""></li>
+                    <li><img src="kopi4.png" alt=""></li>
+                    <li><img src="kopi5.png" alt=""></li>
+                    <li><img src="kopi6.png" alt=""></li>
+                    <li><img src="kopi10.png" alt=""></li>
+                    <li><img src="kopi11.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h2 class="heading">Mini <span>Games</span></h2>
+        <div class="review-container">
+            <div class="review-box">
+                <i class='bx bxs-user-circle'></i>
+                <h3>Tictactoe</h3>
+                <p>saya mengambil source code ini dari platform youtube dari seorang youtuber yang sangat baik hait yang bernama CodeArry, ini adalah sebuah game tictactoe yang melawan komputer yang sudah dirancang khusus.
+                </p>
+                <a href="tictactoe/toe.html" class="btn"> Click Ini</a>
+            </div>
+
+            <div class="review-box">
+                <i class='bx bxs-user-circle'></i>
+                <h3>Tembak Gambar</h3>
+                <p>Ini adalah sebuah game yang menembak-nembak sebuah bola berwarna, player akan menglik mouse ke arah bola berwarna supaya bola berwarna tidak mengenai player.</p>
+                <a href="tebakgambar/index.html" class="btn"> Click Ini </a>
+            </div>
+
+            <div class="review-box">
+                <i class='bx bxs-user-circle'></i>
+                <h3>Rock Paper Scissors</h3>
+                <p>Ini adalah game suit suit an, player akan bermain game suit melawan komputer yang dirancang akan random untuk memilih diantara ketiga bentuk tangan tersebut, dan ketika menang point akan bertambah.</p>
+                <a href="suit/index.html" class="btn"> Click Ini</a>
+            </div>
+
+            <div class="review-box">
+                <i class='bx bxs-user-circle'></i>
+                <h3>Ping Pong</h3>
+                <p>Ini adalah game ping pong, game ini bisa dimainkan single player maupun multi player. game ini bisa memilih tingkat kesulitan ketika bermain single player melawan komputer atau bot.</p>
+                <a href="pingpong/index.html" class="btn"> Click Ini</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <h2 class="contact-heading">Contact <span>Us</span></h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="container-shadow">
+                    <div class="shadow">
+                        <div class="card">
+                            <div class="card-header">Contact</div>
+                                <div class="card-body">
+                                    <dl>
+                                    <span>
+                                            <dt><a href="https://www.instagram.com/kopi__andi/profilecard/?igsh=d2xzdmxjNHE3ZGcw" target="_blank"><i class='bx bxl-instagram-alt'></i></a></dt>
+                                            <dd>Andi Coffee</dd>
+                                        </span>
+                                    <span>
+                                            <dt><a href="mailto:AndiCoffee@gmail.com?subject=Inquiry&body=Halo, saya ingin tahu lebih banyak tentang..."><i class='bx bxl-gmail' ></i></a></dt>
+                                            <dd>AndiCoffee@gmail.com</dd>
+                                        </span>
+                                    <span>
+                                            <dt><a href="tel:+62858322333"><i class='bx bxs-phone' ></i></a></dt>
+                                            <dd>(+62)858322333</dd>
+                                        </span>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253771.46465333435!2d106.6934857!3d-6.370859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f39cd1647207%3A0x51ea278e190bf3f6!2sKedai%20Kopi%20Andi!5e0!3m2!1sid!2sid!4v1733401803020!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="sosial">
+            <a href="https://www.instagram.com/vadelbadjideh?igsh=MTdkdzMyb3d3YXNucg=="><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.facebook.com/vadelalfajar.badjideh?mibextid=LQQJ4d"><i class='bx bxl-facebook-square' ></i></a>
+            <a href="https://www.tiktok.com/@vadelbadjideh?_t=8qJvQJRCoLw&_r=1"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://wa.link/ds3as7"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+
+        <ul>
+        <li><a href="FAQ/index.html">FAQ</a></li>
+        <li><a href="#gallery">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="policy/index.html">Privacy Policy</a></li>
+    </ul>
+
+    <p class="copyright">
+        @AndiCoffee | All Rights Reserved
+    </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".header", {
+            duration: 1,
+            y: -100,
+            opacity: 1,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: ".header",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: true
+            }
+        });
+
+            gsap.from(".home-isi", {
+        duration: 3,
+        y: 100,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".home-isi",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".about-isi", {
+        duration: 3,
+        x: -100,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".about-isi",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".gallery-isi", {
+        duration: 3,
+        x: 100,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".gallery",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".review", {
+        duration: 3,
+        scale: 0.8,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".review-container",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".contact-section", {
+        duration: 1.5,
+        scale: 0.8,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".footer", {
+        duration: 2,
+        y: 100,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".footer",
+            start: "top 100%",
+            end: "bottom 100%",
+            scrub: true
+        }
+    });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+
+    color: white;
+}
+
+main {
+    background: #0A0519;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#header .player {
+    background: #17122A;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid 4px #17122A;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+#header .player:hover {
+    border: solid 4px #2A2343;
+}
+#header .player-active {
+    opacity: 1;
+    border: solid 4px #2A2343;
+}
+#header #xPlayerDisplay {
+    color: #f4f7f8a7;
+}
+#header #oPlayerDisplay {
+    color: #e4b381;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 12px;
+}
+
+#board .cell {
+    background: #17122A;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+#board .cell:hover {
+    background: #2A2343;
+}
+
+#restartBtn {
+    margin-top: 30px;
+    width: 235px;
+    background: #080808;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s background;
+    visibility: hidden;
+}
+#restartBtn:hover {
+    background: #e4b381;
+} 
+
+.corner-button {
+    position: fixed;
+    left: 15px; 
+    bottom: 15px; 
+    background-color: #e4b381; 
+    color: white; 
+    padding: 9px 15px; 
+    border: none; 
+    border-radius: 15px; 
+    font-size: 13px; 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Font */
+    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s; /* Transisi saat hover */
+    opacity: 0.8; 
+}
+
+.corner-button:hover {
+    background-color: #b38d66;
+    transform: translateY(-2px); 
+    opacity: 1; 
+}
